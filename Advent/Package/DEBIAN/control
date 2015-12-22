@@ -1,0 +1,17 @@
+Package: info.adolfoi.Advent
+Name: Advent
+Version: 1.0-1
+Description: 
+Section: System
+Depends: firmware (>= 8.0), mobilesubstrate, libactivator
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Adolfoi_
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+

@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83A6FD801C29436E007FBC1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A6FD7F1C29436E007FBC1E /* Foundation.framework */; };
+		83A6FD821C29436E007FBC1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A6FD811C29436E007FBC1E /* UIKit.framework */; };
+		83A6FD911C29436F007FBC1E /* Advent.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6FD901C29436F007FBC1E /* Advent.m */; };
+		83A6FDA81C2959A4007FBC1E /* libactivator.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A6FDA71C2959A4007FBC1E /* libactivator.dylib */; };
+		83A6FDB11C295B39007FBC1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6FDB01C295B39007FBC1E /* main.m */; };
+		83A6FDB41C295B39007FBC1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6FDB31C295B39007FBC1E /* AppDelegate.m */; };
+		83A6FDB71C295B39007FBC1E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6FDB61C295B39007FBC1E /* MasterViewController.m */; };
+		83A6FDBA1C295B39007FBC1E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6FDB91C295B39007FBC1E /* DetailViewController.m */; };
+		83A6FDBD1C295B3A007FBC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A6FDBB1C295B3A007FBC1E /* Main.storyboard */; };
+		83A6FDBF1C295B3A007FBC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A6FDBE1C295B3A007FBC1E /* Assets.xcassets */; };
+		83A6FDC21C295B3A007FBC1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A6FDC01C295B3A007FBC1E /* LaunchScreen.storyboard */; };
+		83A6FE0E1C297D1D007FBC1E /* Calendar.app in Resources */ = {isa = PBXBuildFile; fileRef = 83A6FE0D1C297D1D007FBC1E /* Calendar.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83A6FD7C1C29436E007FBC1E /* Advent.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Advent.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A6FD7F1C29436E007FBC1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83A6FD811C29436E007FBC1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		83A6FD861C29436F007FBC1E /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		83A6FD871C29436F007FBC1E /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		83A6FD891C29436F007FBC1E /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		83A6FD8D1C29436F007FBC1E /* Advent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Advent.plist; path = Package/Library/PreferenceLoader/Preferences/Advent.plist; sourceTree = "<group>"; };
+		83A6FD8E1C29436F007FBC1E /* AdventIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AdventIcon.png; path = Package/Library/PreferenceLoader/Preferences/AdventIcon.png; sourceTree = "<group>"; };
+		83A6FD8F1C29436F007FBC1E /* AdventIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AdventIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/AdventIcon@2x.png"; sourceTree = "<group>"; };
+		83A6FD901C29436F007FBC1E /* Advent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Advent.m; sourceTree = "<group>"; };
+		83A6FD941C29436F007FBC1E /* Advent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Advent.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Advent.plist; sourceTree = "<group>"; };
+		83A6FD981C29436F007FBC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/Library/Activator/Listeners/info.adolfoi.Advent/Info.plist; sourceTree = "<group>"; };
+		83A6FD991C29436F007FBC1E /* Icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-small.png"; path = "Package/Library/Activator/Listeners/info.adolfoi.Advent/Icon-small.png"; sourceTree = "<group>"; };
+		83A6FD9A1C29436F007FBC1E /* Icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-small@2x.png"; path = "Package/Library/Activator/Listeners/info.adolfoi.Advent/Icon-small@2x.png"; sourceTree = "<group>"; };
+		83A6FDA71C2959A4007FBC1E /* libactivator.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libactivator.dylib; sourceTree = "<group>"; };
+		83A6FDAD1C295B39007FBC1E /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A6FDB01C295B39007FBC1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83A6FDB21C295B39007FBC1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83A6FDB31C295B39007FBC1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83A6FDB51C295B39007FBC1E /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		83A6FDB61C295B39007FBC1E /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		83A6FDB81C295B39007FBC1E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		83A6FDB91C295B39007FBC1E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		83A6FDBC1C295B3A007FBC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83A6FDBE1C295B3A007FBC1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83A6FDC11C295B3A007FBC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83A6FDC31C295B3A007FBC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A6FE0D1C297D1D007FBC1E /* Calendar.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = Calendar.app; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83A6FD781C29436E007FBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A6FD801C29436E007FBC1E /* Foundation.framework in Frameworks */,
+				83A6FDA81C2959A4007FBC1E /* libactivator.dylib in Frameworks */,
+				83A6FD821C29436E007FBC1E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A6FDAA1C295B39007FBC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83A6FD721C29436E007FBC1E = {
+			isa = PBXGroup;
+			children = (
+				83A6FD831C29436E007FBC1E /* Advent */,
+				83A6FDAE1C295B39007FBC1E /* Calendar */,
+				83A6FD7E1C29436E007FBC1E /* Frameworks */,
+				83A6FD7D1C29436E007FBC1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83A6FD7D1C29436E007FBC1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD7C1C29436E007FBC1E /* Advent.dylib */,
+				83A6FDAD1C295B39007FBC1E /* Calendar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83A6FD7E1C29436E007FBC1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FDA71C2959A4007FBC1E /* libactivator.dylib */,
+				83A6FD7F1C29436E007FBC1E /* Foundation.framework */,
+				83A6FD811C29436E007FBC1E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83A6FD831C29436E007FBC1E /* Advent */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD901C29436F007FBC1E /* Advent.m */,
+				83A6FD841C29436F007FBC1E /* Package */,
+				83A6FD881C29436F007FBC1E /* Supporting Files */,
+			);
+			path = Advent;
+			sourceTree = "<group>";
+		};
+		83A6FD841C29436F007FBC1E /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FE0C1C297D1D007FBC1E /* Applications */,
+				83A6FD851C29436F007FBC1E /* DEBIAN */,
+				83A6FD8A1C29436F007FBC1E /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		83A6FD851C29436F007FBC1E /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD861C29436F007FBC1E /* control.txt */,
+				83A6FD871C29436F007FBC1E /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		83A6FD881C29436F007FBC1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD891C29436F007FBC1E /* PackageVersion.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83A6FD8A1C29436F007FBC1E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD8B1C29436F007FBC1E /* PreferenceLoader */,
+				83A6FD921C29436F007FBC1E /* MobileSubstrate */,
+				83A6FD951C29436F007FBC1E /* Activator */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		83A6FD8B1C29436F007FBC1E /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD8C1C29436F007FBC1E /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		83A6FD8C1C29436F007FBC1E /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD8D1C29436F007FBC1E /* Advent.plist */,
+				83A6FD8E1C29436F007FBC1E /* AdventIcon.png */,
+				83A6FD8F1C29436F007FBC1E /* AdventIcon@2x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		83A6FD921C29436F007FBC1E /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD931C29436F007FBC1E /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		83A6FD931C29436F007FBC1E /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD941C29436F007FBC1E /* Advent.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		83A6FD951C29436F007FBC1E /* Activator */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD961C29436F007FBC1E /* Listeners */,
+			);
+			name = Activator;
+			sourceTree = "<group>";
+		};
+		83A6FD961C29436F007FBC1E /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD971C29436F007FBC1E /* ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___ */,
+			);
+			name = Listeners;
+			sourceTree = "<group>";
+		};
+		83A6FD971C29436F007FBC1E /* ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___ */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FD981C29436F007FBC1E /* Info.plist */,
+				83A6FD991C29436F007FBC1E /* Icon-small.png */,
+				83A6FD9A1C29436F007FBC1E /* Icon-small@2x.png */,
+			);
+			name = "___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___";
+			sourceTree = "<group>";
+		};
+		83A6FDAE1C295B39007FBC1E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FDB21C295B39007FBC1E /* AppDelegate.h */,
+				83A6FDB31C295B39007FBC1E /* AppDelegate.m */,
+				83A6FDB51C295B39007FBC1E /* MasterViewController.h */,
+				83A6FDB61C295B39007FBC1E /* MasterViewController.m */,
+				83A6FDB81C295B39007FBC1E /* DetailViewController.h */,
+				83A6FDB91C295B39007FBC1E /* DetailViewController.m */,
+				83A6FDBB1C295B3A007FBC1E /* Main.storyboard */,
+				83A6FDBE1C295B3A007FBC1E /* Assets.xcassets */,
+				83A6FDC01C295B3A007FBC1E /* LaunchScreen.storyboard */,
+				83A6FDC31C295B3A007FBC1E /* Info.plist */,
+				83A6FDAF1C295B39007FBC1E /* Supporting Files */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		83A6FDAF1C295B39007FBC1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FDB01C295B39007FBC1E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83A6FE0C1C297D1D007FBC1E /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				83A6FE0D1C297D1D007FBC1E /* Calendar.app */,
+			);
+			name = Applications;
+			path = Package/Applications;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83A6FD791C29436E007FBC1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83A6FD7B1C29436E007FBC1E /* Advent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A6FD9D1C29436F007FBC1E /* Build configuration list for PBXNativeTarget "Advent" */;
+			buildPhases = (
+				83A6FD771C29436E007FBC1E /* Sources */,
+				83A6FD781C29436E007FBC1E /* Frameworks */,
+				83A6FD791C29436E007FBC1E /* Headers */,
+				83A6FD7A1C29436E007FBC1E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Advent;
+			productName = Advent;
+			productReference = 83A6FD7C1C29436E007FBC1E /* Advent.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		83A6FDAC1C295B39007FBC1E /* Calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A6FDC41C295B3A007FBC1E /* Build configuration list for PBXNativeTarget "Calendar" */;
+			buildPhases = (
+				83A6FDA91C295B39007FBC1E /* Sources */,
+				83A6FDAA1C295B39007FBC1E /* Frameworks */,
+				83A6FDAB1C295B39007FBC1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calendar;
+			productName = Calendar;
+			productReference = 83A6FDAD1C295B39007FBC1E /* Calendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83A6FD731C29436E007FBC1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					83A6FD7B1C29436E007FBC1E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					83A6FDAC1C295B39007FBC1E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = Y3PDAF2R6H;
+					};
+				};
+			};
+			buildConfigurationList = 83A6FD761C29436E007FBC1E /* Build configuration list for PBXProject "Advent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83A6FD721C29436E007FBC1E;
+			productRefGroup = 83A6FD7D1C29436E007FBC1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83A6FD7B1C29436E007FBC1E /* Advent */,
+				83A6FDAC1C295B39007FBC1E /* Calendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83A6FDAB1C295B39007FBC1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A6FDC21C295B3A007FBC1E /* LaunchScreen.storyboard in Resources */,
+				83A6FE0E1C297D1D007FBC1E /* Calendar.app in Resources */,
+				83A6FDBF1C295B3A007FBC1E /* Assets.xcassets in Resources */,
+				83A6FDBD1C295B3A007FBC1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83A6FD7A1C29436E007FBC1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83A6FD771C29436E007FBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A6FD911C29436F007FBC1E /* Advent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A6FDA91C295B39007FBC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A6FDB41C295B39007FBC1E /* AppDelegate.m in Sources */,
+				83A6FDB71C295B39007FBC1E /* MasterViewController.m in Sources */,
+				83A6FDB11C295B39007FBC1E /* main.m in Sources */,
+				83A6FDBA1C295B39007FBC1E /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83A6FDBB1C295B3A007FBC1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83A6FDBC1C295B3A007FBC1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83A6FDC01C295B3A007FBC1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83A6FDC11C295B3A007FBC1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83A6FD9B1C29436F007FBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mitsuhiro Hashimoto (QRF7R736DA)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		83A6FD9C1C29436F007FBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mitsuhiro Hashimoto (QRF7R736DA)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		83A6FD9E1C29436F007FBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mitsuhiro Hashimoto (QRF7R736DA)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.16;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		83A6FD9F1C29436F007FBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mitsuhiro Hashimoto (QRF7R736DA)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.16;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		83A6FDC51C295B3A007FBC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mitsuhiro Hashimoto (QRF7R736DA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mitsuhiro Hashimoto (QRF7R736DA)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = Calendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = info.adolfoi.Calendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyBuild = NO;
+				iOSOpenDevDevice = 192.168.1.16;
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPlist = YES;
+			};
+			name = Debug;
+		};
+		83A6FDC61C295B3A007FBC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mitsuhiro Hashimoto (QRF7R736DA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mitsuhiro Hashimoto (QRF7R736DA)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = Calendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.adolfoi.Calendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyBuild = NO;
+				iOSOpenDevDevice = 192.168.1.16;
+				iOSOpenDevInstallOnAnyBuild = YES;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPlist = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83A6FD761C29436E007FBC1E /* Build configuration list for PBXProject "Advent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A6FD9B1C29436F007FBC1E /* Debug */,
+				83A6FD9C1C29436F007FBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A6FD9D1C29436F007FBC1E /* Build configuration list for PBXNativeTarget "Advent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A6FD9E1C29436F007FBC1E /* Debug */,
+				83A6FD9F1C29436F007FBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A6FDC41C295B3A007FBC1E /* Build configuration list for PBXNativeTarget "Calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A6FDC51C295B3A007FBC1E /* Debug */,
+				83A6FDC61C295B3A007FBC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83A6FD731C29436E007FBC1E /* Project object */;
+}
